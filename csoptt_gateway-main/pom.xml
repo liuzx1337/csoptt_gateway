@@ -22,16 +22,22 @@
 	</properties>
 
 	<dependencies>
+		<!-- Spring Boot启动器 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+		<!-- Spring Cloud Config 从配置中心获取配置 -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-config</artifactId>
 		</dependency>
-
+		<!-- Spring Cloud Zuul网关 -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-zuul</artifactId>
 		</dependency>
-
+		<!-- Spring Cloud Eureka注册中心客户端 -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
@@ -46,6 +52,5 @@
 			</plugin>
 		</plugins>
 	</build>
-
 
 </project>
